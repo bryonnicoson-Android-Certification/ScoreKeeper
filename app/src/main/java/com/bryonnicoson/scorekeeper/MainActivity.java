@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         switch (viewID) {
             case R.id.team1_minus:
                 mScoreTeam1--;
-                mScoreText1.setText(mScoreTeam1);
+                mScoreText1.setText(String.valueOf(mScoreTeam1));
                 break;
             case R.id.team2_minus:
                 mScoreTeam2--;
-                mScoreText2.setText(mScoreTeam2);
+                mScoreText2.setText(String.valueOf(mScoreTeam2));
                 break;
         }
     }
@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
         switch (viewID) {
             case R.id.team1_plus:
                 mScoreTeam1++;
-                mScoreText1.setText(mScoreTeam1);
+                mScoreText1.setText(String.valueOf(mScoreTeam1));
                 break;
             case R.id.team2_plus:
                 mScoreTeam2++;
-                mScoreText2.setText(mScoreTeam2);
+                mScoreText2.setText(String.valueOf(mScoreTeam2));
                 break;
         }
     }

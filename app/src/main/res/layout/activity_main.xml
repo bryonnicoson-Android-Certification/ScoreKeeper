@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.bryonnicoson.scorekeeper.MainActivity"
-    android:padding="@dimen/padding_16dp">
+    android:padding="@dimen/padding_16dp"
+    tools:context="com.bryonnicoson.scorekeeper.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,14 +22,15 @@
 
         <ImageButton
             android:id="@+id/team1_minus"
-            android:background="@drawable/button_background"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
+            android:background="@drawable/button_background"
             android:contentDescription="@string/minus_button"
-            android:src="@drawable/ic_minus"/>
+            android:onClick="decreaseScore"
+            android:src="@drawable/ic_minus" />
 
         <TextView
             android:id="@+id/team1_score"
@@ -37,18 +38,19 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/initial_score"/>
+            android:text="@string/initial_score" />
 
         <ImageButton
             android:id="@+id/team1_plus"
-            android:background="@drawable/button_background"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_plus"
-            android:contentDescription="@string/plus_button"/>
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/plus_button"
+            android:onClick="increaseScore"
+            android:src="@drawable/ic_plus" />
 
     </RelativeLayout>
 
@@ -66,14 +68,15 @@
 
         <ImageButton
             android:id="@+id/team2_minus"
-            android:background="@drawable/button_background"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
+            android:background="@drawable/button_background"
             android:contentDescription="@string/minus_button"
-            android:src="@drawable/ic_minus"/>
+            android:onClick="decreaseScore"
+            android:src="@drawable/ic_minus" />
 
         <TextView
             android:id="@+id/team2_score"
@@ -81,18 +84,19 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/initial_score"/>
+            android:text="@string/initial_score" />
 
         <ImageButton
             android:id="@+id/team2_plus"
-            android:background="@drawable/button_background"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:background="@drawable/button_background"
             android:contentDescription="@string/plus_button"
-            android:src="@drawable/ic_plus"/>
+            android:onClick="increaseScore"
+            android:src="@drawable/ic_plus" />
 
     </RelativeLayout>
 
